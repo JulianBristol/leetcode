@@ -58,5 +58,4 @@ var calcEquation = function(equations, values, queries) {
         
     }
     return results;
-    console.log(graph)
 };
