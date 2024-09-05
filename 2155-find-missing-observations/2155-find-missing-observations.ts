@@ -1,14 +1,13 @@
 function missingRolls(rolls: number[], mean: number, n: number): number[] {
-    let ans = [];
     let sum = 0;
     rolls.map((x) => {
         sum += x;
     })
-    const numRolls = rolls.length + n;
-    const missingAvg = ((mean*numRolls) - sum)/n;
+    const missingAvg = ((mean*(rolls.length + n)) - sum)/n;
     if (missingAvg < 1 || missingAvg > 6){
-        return ans;
+        return [];
     }else {
+    let ans = [];
         let boost = 0;
         for (let q = 0; q < n; q++){
             let num = 0;
@@ -20,6 +19,6 @@ function missingRolls(rolls: number[], mean: number, n: number): number[] {
             }
             ans.push(num);
         }
-    }
     return ans;
+    }
 };
