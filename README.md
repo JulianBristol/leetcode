@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [1406-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/JulianBristol/leetcode/tree/master/1406-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [2155-find-missing-observations](https://github.com/JulianBristol/leetcode/tree/master/2155-find-missing-observations) |
 ## Simulation
 |  |
