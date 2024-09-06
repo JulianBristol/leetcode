@@ -15,19 +15,14 @@ function modifiedList(nums: number[], head: ListNode | null): ListNode | null {
     const set = new Set(nums);
 
     let prev = new ListNode(0,head);
-    const ans = head;
+    let ans = prev;
 
-    while (head && head.next){
-        if (set.has(head.val)){
-            head.val = head.next.val;
-            head.next = head.next.next;
+    while (prev.next){
+        if (set.has(prev.next.val)){
+            prev.next = prev.next.next;
         } else {
-            head = head.next;
             prev = prev.next;
         }
     }
-    if (set.has(head.val)){
-        prev.next = prev.next.next;
-    }
-    return ans;
+    return ans.next;
 };
