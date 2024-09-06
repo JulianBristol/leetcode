@@ -12,10 +12,7 @@
 
 function modifiedList(nums: number[], head: ListNode | null): ListNode | null {
     if (head===null) return null;
-    const set = new Set();
-    nums.map((x) => {
-        set.add(x);
-    })
+    const set = new Set(nums);
 
     let prev = new ListNode(0,head);
     const ans = head;
