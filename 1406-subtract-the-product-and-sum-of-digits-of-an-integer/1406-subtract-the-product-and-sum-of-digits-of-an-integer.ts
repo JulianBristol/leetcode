@@ -1,10 +1,10 @@
 function subtractProductAndSum(n: number): number {
-    let numArray = n+'';
     let sum = 0;
     let product = 1;
-    for (let i = 0; i < numArray.length; i++){
-        sum += Number (numArray.charAt(i));
-        product *= Number (numArray.charAt(i));
+    while(n){
+        sum += n % 10;
+        product *= n % 10;
+        n = Math.floor(n / 10);
     }
     return product - sum;
 };
