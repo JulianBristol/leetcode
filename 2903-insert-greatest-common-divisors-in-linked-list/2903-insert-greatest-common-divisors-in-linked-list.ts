@@ -11,6 +11,7 @@
  */
 
 function insertGreatestCommonDivisors(head: ListNode | null): ListNode | null {
+    if (!head) return head;
     const gcd = (a,b) => {
         if (b === 0) {
             return a;
@@ -19,12 +20,9 @@ function insertGreatestCommonDivisors(head: ListNode | null): ListNode | null {
     }
 
     let ans = head;
-    let temp = head;
 
     while (head && head.next){
-        let GCD = gcd(head.val, head.next.val);
-        temp = head.next;
-        head.next = new ListNode(GCD, temp);
+        head.next = new ListNode(gcd(head.val, head.next.val), head.next);
         head = head.next.next;
     }
 
