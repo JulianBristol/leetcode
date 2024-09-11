@@ -3,7 +3,7 @@ function minBitFlips(start: number, goal: number): number {
   let startBin = start.toString(2);
   let goalBin = goal.toString(2);
 
-  //get number of differences
+  //append leading zeroes
   goalBin = goalBin.padStart(startBin.length, "0");
   startBin = startBin.padStart(goalBin.length, "0");
 
