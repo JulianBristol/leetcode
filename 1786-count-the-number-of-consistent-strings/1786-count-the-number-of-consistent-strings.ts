@@ -1,15 +1,15 @@
 function countConsistentStrings(allowed: string, words: string[]): number {
-let counter = words.length;
-  const allowedSet = new Set(allowed);
+    let ans = words.length;
 
-  for (const word of words) {
-    for (const char of word) {
-      if (!allowedSet.has(char)) {
-        counter--;
-        break;
-      }
+    const set = new Set(Array.from(allowed))
+    
+    for(let i = 0; i < words.length; i++){
+        for(let j = 0; j < words[i].length; j++){
+            if (!set.has(words[i].charAt(j))){
+                ans--;
+                break;
+            }
+        }
     }
-  }
-
-  return counter;
+    return ans;
 };
