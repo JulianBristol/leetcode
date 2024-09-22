@@ -67,4 +67,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1435-xor-queries-of-a-subarray](https://github.com/JulianBristol/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+## Trie
+|  |
+| ------- |
+| [0440-k-th-smallest-in-lexicographical-order](https://github.com/JulianBristol/leetcode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 <!---LeetCode Topics End-->
