@@ -1,26 +1,26 @@
 function findKthNumber(n: number, k: number): number {
-    let current = 1; // Start with the smallest number
-    k -= 1; // Decrease k since we're starting from 1
+    let current = 1;
+    k -= 1;
 
-    while (k > 0) {
+    while (k > 0){
+        //count the numbers in the prefix
         let count = 0;
         let first = current;
         let last = current + 1;
 
-        while (first <= n) {
-            count += Math.min(n + 1, last) - first; // Count numbers in range
-            first *= 10; // Move to the next level
-            last *= 10; // Move to the next level
+        while (first <= n){
+            count += Math.min(n+1, last) - first;
+            first *= 10;
+            last *= 10;
         }
 
-        if (count <= k) {
-            current += 1; // Move to the next prefix
-            k -= count; // Reduce k by the number of counted numbers
+        if (count <= k){
+            k -= count;
+            current += 1;
         } else {
-            current *= 10; // Go deeper into the current prefix
-            k -= 1; // Decrease k, since we're going to the next number in the current branch
+            k -= 1;
+            current *=10;
         }
     }
-
-    return current; // This is the kth smallest number
-}
+    return current;
+};
