@@ -1,20 +1,18 @@
 function minBitFlips(start: number, goal: number): number {
-  //convert both to binary
-  let startBin = start.toString(2);
-  let goalBin = goal.toString(2);
-
-  //append leading zeroes
-  goalBin = goalBin.padStart(startBin.length, "0");
-  startBin = startBin.padStart(goalBin.length, "0");
-
-  //count differences
-  let ans = 0;
-  for (let i = 0; i < startBin.length; i++) {
-    if (startBin.charAt(i) !== goalBin.charAt(i)) {
-      ans++;
+    //transform into binary
+    let s = start.toString(2);
+    let e = goal.toString(2);
+    let length = Math.max(s.length, e.length);
+    e = e.padStart(length, "0");
+    s = s.padStart(length, "0");
+    
+    //count the differences
+    let ans = 0;
+    for(let i = 0; i < length; i++){
+        if (e.charAt(i) !== s.charAt(i)){
+            ans++;
+        }
     }
-  }
-
-  //return answer
-  return ans;
-}
+    //return the number of differences
+    return ans;
+};
