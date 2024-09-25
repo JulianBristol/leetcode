@@ -1,63 +1,65 @@
-class TrieNode {
-    // Each node has up to 10 possible children (digits 0-9)
-    children: (TrieNode | null)[] = Array(10).fill(null);
-}
-
-class Trie {
-    root: TrieNode;
-
-    constructor() {
-        this.root = new TrieNode();
-    }
-
-    // Insert a number into the Trie
-    insert(num: number): void {
-        let node = this.root;
-        const numStr = num.toString(); // Convert number to string to iterate over digits
-
-        for (const digit of numStr) {
-            const idx = Number(digit); // Convert char to number (0-9)
-            if (node.children[idx] === null) {
-                node.children[idx] = new TrieNode(); // Create new node if it doesn't exist
-            }
-            node = node.children[idx]; // Move to the child node
-        }
-    }
-
-    // Find the longest common prefix for a number in arr2 with the Trie
-    findLongestPrefix(num: number): number {
-        let node = this.root;
-        const numStr = num.toString();
-        let len = 0;
-
-        for (const digit of numStr) {
-            const idx = Number(digit);
-            if (node.children[idx] !== null) {
-                len++; // Increase length if there's a matching child
-                node = node.children[idx]; // Move to the child node
-            } else {
-                break; // Stop if there's no match
-            }
-        }
-        return len; // Return the length of the common prefix found
-    }
-}
-
 function longestCommonPrefix(arr1: number[], arr2: number[]): number {
+
+    let ans = 0;
+
+    class TrieNode {
+        children: (TrieNode | null)[] = new Array(10).fill(null);
+    }
+
+    class Trie {
+        root: TrieNode = new TrieNode();
+        
+        //Insert method to traverse the trie and input nodes under 
+        insert(num: number): void {
+            let node = this.root;
+
+            //covert number to string for digits
+            const numStr = num.toString();
+
+            for (const digit of numStr){
+                //convert character to integer
+                const idx = parseInt(digit)
+                if (!node.children[idx]){
+                    //create node if it does not exist
+                    node.children[idx] = new TrieNode();
+                }
+                //move to next node
+                node = node.children[idx]
+            }
+        }
+
+        findLongestPrefix (num: number): void {
+            let node = this.root;
+            //convert number to string
+            const numStr = num.toString();
+            //track matched digits
+            let len = 0;
+
+            for (const digit of numStr){
+                const idx = parseInt(digit);
+                if (node.children[idx]){
+                    len++;
+                    //move to next digit
+                    node = node.children[idx]
+                } else{
+                    break;
+                }
+            }
+
+            if (ans < len){
+                ans = len;
+            }
+        }
+    }
+
+    
+    
     const trie = new Trie();
-
-    // Step 1: Insert all numbers from arr1 into the Trie
-    for (const num of arr1) {
+    arr1.forEach((num) => {
         trie.insert(num);
-    }
-
-    let longestPrefix = 0;
-
-    // Step 2: Find the longest prefix match for each number in arr2
-    for (const num of arr2) {
-        const len = trie.findLongestPrefix(num);
-        longestPrefix = Math.max(longestPrefix, len); // Update the maximum prefix length
-    }
-
-    return longestPrefix; // Return the longest common prefix length
-}
+    })
+    arr2.forEach((num) => {
+        trie.findLongestPrefix(num);
+    })
+    return ans;
+};
