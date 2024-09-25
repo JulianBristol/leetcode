@@ -1,51 +1,62 @@
+function sumPrefixScores(words: string[]): number[] {
+
+    let result = Array(words.length).fill(0)
+    let trie = new Trie()
+    for(let word of words){
+        trie.insert(word)
+    }
+    let i=0
+    for(let word of words){
+        result[i++] = trie.getScore(word)
+    }
+    
+    return result
+    
+};
+
+
+//trie with array
 class TrieNode {
-    next: (TrieNode | null)[] = new Array(26).fill(null);
-    cnt: number = 0;
+    children: any;
+    
+    score: number
+    constructor() {
+        this.children = {};
+       
+        this.score = 0
+    }
 }
 
 class Trie {
-    root: TrieNode = new TrieNode();
-
-    // Insert function for the word.
+    root: TrieNode;
+    constructor() {
+        this.root = new TrieNode();
+    }
     insert(word: string): void {
-        let node = this.root;
-        for (const c of word) {
-            const index = c.charCodeAt(0) - 'a'.charCodeAt(0);
-            if (!node.next[index]) {
-                node.next[index] = new TrieNode();
+        let current = this.root;
+        for (let ch of word) {
+            let node = current.children[ch]
+            if (!node) {
+                current.children[ch] = new TrieNode()
             }
-            node.next[index]!.cnt++;
-            node = node.next[index]!;
+            
+            current = current.children[ch]
+            current.score++
         }
+        
     }
-
-    // Calculate the prefix count using this function.
-    count(s: string): number {
-        let node = this.root;
-        let ans = 0;
-        for (const c of s) {
-            const index = c.charCodeAt(0) - 'a'.charCodeAt(0);
-            ans += node.next[index]!.cnt;
-            node = node.next[index]!;
+    getScore(word: string): number {
+        let score = 0
+        let current = this.root;
+        for (let ch of word) {
+            let node = current.children[ch]
+            if (node == null) {
+                return score;
+            }
+            score += node.score
+            current = node;
         }
-        return ans;
+        return score
     }
-}
-
-function sumPrefixScores(words: string[]): number[] {
-    const trie = new Trie();
-    const N = words.length;
-
-    // Insert all words into the trie.
-    for (let i = 0; i < N; i++) {
-        trie.insert(words[i]);
-    }
-
-    // Calculate scores for each word.
-    const scores: number[] = new Array(N);
-    for (let i = 0; i < N; i++) {
-        scores[i] = trie.count(words[i]);
-    }
-
-    return scores;
+    
 }
