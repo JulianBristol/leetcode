@@ -1,7 +1,4 @@
 function longestCommonPrefix(arr1: number[], arr2: number[]): number {
-
-    let ans = 0;
-
     class TrieNode {
         children: (TrieNode | null)[] = new Array(10).fill(null);
     }
@@ -28,7 +25,7 @@ function longestCommonPrefix(arr1: number[], arr2: number[]): number {
             }
         }
 
-        findLongestPrefix (num: number): void {
+        findLongestPrefix (num: number): number {
             let node = this.root;
             //convert number to string
             const numStr = num.toString();
@@ -45,21 +42,27 @@ function longestCommonPrefix(arr1: number[], arr2: number[]): number {
                     break;
                 }
             }
-
-            if (ans < len){
-                ans = len;
-            }
+            
+            return len;
         }
     }
 
-    
-    
-    const trie = new Trie();
-    arr1.forEach((num) => {
-        trie.insert(num);
-    })
-    arr2.forEach((num) => {
-        trie.findLongestPrefix(num);
-    })
-    return ans;
+    function longestCommonPrefix(arr1: number[], arr2: number[]): number {
+        const trie = new Trie();
+
+        for (const num of arr1){
+            trie.insert(num);
+        }
+
+        let ans = 0;
+
+        for (const num of arr2){
+            const len = trie.findLongestPrefix(num);
+            ans = Math.max(ans, len);
+        }
+
+        return ans;
+    }
+
+    return longestCommonPrefix(arr1, arr2)
 };
