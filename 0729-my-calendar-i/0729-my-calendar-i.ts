@@ -1,17 +1,16 @@
 class MyCalendar {
-    bookings: any;
+    bookings: [number, number][];
     constructor() {
         this.bookings = [];
     }
 
     book(start: number, end: number): boolean {
-        let cal = this.bookings;
-        for(const times of cal){
-            if (start < times[1] && end > times[0]){
+        for(const [bStart, bEnd] of this.bookings){
+            if (start < bEnd && end > bStart){
                 return false;
             }
         }
-        cal.push([start, end])
+        this.bookings.push([start, end])
         return true
     }
 }
