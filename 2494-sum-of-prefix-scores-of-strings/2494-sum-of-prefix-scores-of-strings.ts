@@ -12,47 +12,47 @@ function sumPrefixScores(words: string[]): number[] {
     class Trie {
         root: TrieNode;
 
-        constructor() {
+        constructor (){
             this.root = new TrieNode();
         }
 
         insert(word: string): void {
-            //check if the node exists
             let current = this.root;
-            for (const char of word){
-                if (!current.children[char]){
-                    current.children[char] = new TrieNode();
+            for(const ch of word){
+                if (!current.children[ch]){
+                    current.children[ch] = new TrieNode();
                 }
-                current = current.children[char]
+                current = current.children[ch]
                 current.score++;
             }
         }
 
-        countScore(word: string):number {
-            let current = this.root;
+        countScore(word: string): number {
             let count = 0;
-            for (const char of word){
-                current = current.children[char];
+            let current = this.root;
+            for(const ch of word){
+                current = current.children[ch];
                 count += current.score;
             }
+
             return count;
         }
     }
 
-    const trie = new Trie();
-    for(const word of words){
-        trie.insert(word);
-    }
-    
     let ans = [];
 
-    const generateScores = (words: string[], trie: Trie): void => {
-        for(let i = 0; i < words.length; i++){
-            ans.push(trie.countScore(words[i]));
+    const sumScores = (trie: Trie, words: string[]) => {
+        for (const word of words){
+            trie.insert(word);
+        }
+        for(const word of words){
+            ans.push(trie.countScore(word))
         }
     }
 
-    generateScores(words, trie)
+    const trie = new Trie();
+
+    sumScores(trie, words)
 
     return ans;
 };
