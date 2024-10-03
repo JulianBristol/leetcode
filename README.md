@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0859-design-circular-deque](https://github.com/JulianBristol/leetcode/tree/master/0859-design-circular-deque) |
 | [1256-rank-transform-of-an-array](https://github.com/JulianBristol/leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1435-xor-queries-of-a-subarray](https://github.com/JulianBristol/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+| [1694-make-sum-divisible-by-p](https://github.com/JulianBristol/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2155-find-missing-observations](https://github.com/JulianBristol/leetcode/tree/master/2155-find-missing-observations) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/JulianBristol/leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1256-rank-transform-of-an-array](https://github.com/JulianBristol/leetcode/tree/master/1256-rank-transform-of-an-array) |
+| [1694-make-sum-divisible-by-p](https://github.com/JulianBristol/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/JulianBristol/leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/JulianBristol/leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -80,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0731-my-calendar-ii](https://github.com/JulianBristol/leetcode/tree/master/0731-my-calendar-ii) |
 | [1435-xor-queries-of-a-subarray](https://github.com/JulianBristol/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+| [1694-make-sum-divisible-by-p](https://github.com/JulianBristol/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 ## Trie
 |  |
 | ------- |
