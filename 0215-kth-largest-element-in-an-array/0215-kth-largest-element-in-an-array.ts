@@ -78,10 +78,10 @@ function findKthLargest(nums: number[], k: number): number {
         }
     }
 
-    const heap = new MinHeap(k);
+    const minHeap = new MinHeap(k);
     nums.forEach((x) => {
-        heap.add(x)
+        minHeap.add(x)
     })
 
-    return heap.heap[0];
+    return minHeap.heap[0];
 };
