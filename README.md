@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1256-rank-transform-of-an-array](https://github.com/JulianBristol/leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1694-make-sum-divisible-by-p](https://github.com/JulianBristol/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
+| [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/JulianBristol/leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/JulianBristol/leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Linked List
@@ -101,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/JulianBristol/leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/JulianBristol/leetcode/tree/master/0731-my-calendar-ii) |
 | [0859-design-circular-deque](https://github.com/JulianBristol/leetcode/tree/master/0859-design-circular-deque) |
+| [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Segment Tree
 |  |
 | ------- |
@@ -111,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0729-my-calendar-i](https://github.com/JulianBristol/leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/JulianBristol/leetcode/tree/master/0731-my-calendar-ii) |
+| [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Queue
 |  |
 | ------- |
@@ -128,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/JulianBristol/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
+| [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Quickselect
 |  |
 | ------- |
