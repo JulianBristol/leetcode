@@ -1,85 +1,89 @@
-class MinHeap { 
-    length: number;
-    heap: number[];
+class MinHeap {
+    private maxSize: number;
+    private heap: number[];
 
-    constructor (k: number) {
-        this.length = k;
+    constructor(k: number) {
+        this.maxSize = k;
         this.heap = [];
     }
 
-    insert(num: number) {
-        this.heap.push(num);
-        this.heapifyUp(this.heap.length -1);
-    }
-
-    delete(): number | undefined {
-        if (this.heap.length === 0) return undefined;
-        const first = this.heap[0];
-        this.heap[0] = this.heap.pop();
-        this.heapifyDown();
-        return first;
-    }
-
-    heapifyUp(currentIndex:number) {
-        const heap = this.heap;
-        let parentIndex = Math.floor((currentIndex -1)/2)
-
-        while(currentIndex > 0 && heap[currentIndex] < heap[parentIndex]){
-            [heap[currentIndex], heap[parentIndex]] = [heap[parentIndex], heap[currentIndex]];
-            currentIndex = parentIndex;
-            parentIndex = Math.floor((currentIndex-1)/2)
-        }
-    }
-
-    heapifyDown() {
-        let currentIndex = 0;
+    add(num: number): void {
         let heap = this.heap;
-        let maxSize = heap.length;
-        while(currentIndex < maxSize){
-            let leftChild = currentIndex*2+1;
-            let rightChild = currentIndex*2+2;
-            let smallest = currentIndex;
+        heap.push(num);
+        this.bubbleUp(heap.length -1)
+    }
 
-            if (leftChild < maxSize && heap[leftChild] < heap[smallest]){
-                smallest = leftChild
-            }
+    remove(): number | undefined{
+        if (this.heap.length === 0) return undefined;
+        const pop = this.heap[0];
+        this.heap[0] = this.heap.pop();
+        this.bubbleDown();
 
-            if (rightChild < maxSize && heap[rightChild] < heap[smallest]){
-                smallest = rightChild
-            }
+        return pop;
+    }
 
-            if (heap[currentIndex] > heap[smallest]){
-                [heap[currentIndex], heap[smallest]] = [heap[smallest], heap[currentIndex]];
-                currentIndex = smallest;
-            }else{
-                break
+    bubbleUp(currentIndex: number): void{
+        const heap = this.heap;
+        let parent = Math.floor((currentIndex - 1)/2);
+
+        while(currentIndex > 0){
+            if (heap[parent] > heap[currentIndex]){
+                [heap[parent], heap[currentIndex]] = [heap[currentIndex], heap[parent]]
+                currentIndex = parent;
+                parent = Math.floor((currentIndex - 1)/2);
+            } else{
+                break;
             }
         }
     }
 
-    getMin(): number {
-        return this.heap[0]
+    bubbleDown(): void{
+        let heap = this.heap;
+        let currentIndex = 0;
+        let smallest = currentIndex;
+
+        while (currentIndex < heap.length){
+            let left = (currentIndex * 2) + 1;
+            let right = (currentIndex * 2) + 2;
+
+            if (left < heap.length && heap[left] < heap[smallest]){
+                smallest = left;
+            }
+            if (right < heap.length && heap[right] < heap[smallest]){
+                smallest = right;
+            }
+
+            if (smallest !== currentIndex){
+                [heap[smallest], heap[currentIndex]] = [heap[currentIndex], heap[smallest]];
+                currentIndex = smallest;
+            } else{
+                break;
+            }
+        }
+    }
+
+    getSize(): number{
+        return this.heap.length;
     }
 }
 function maxScore(nums1: number[], nums2: number[], k: number): number {
-    const tuple = nums1.map((num,index) => [num, nums2[index]]).sort((a,b) => b[1] - a[1]);
-    const minHeap = new MinHeap(k);
-    let sumNums1 = 0;
+    let tuple = nums1.map((elem, index) => [elem, nums2[index]]).sort((a,b) => b[1] - a[1])
     let ans = 0;
+    const heap = new MinHeap(k);
+    let sum = 0;
 
-    for (let i = 0; i < tuple.length; i++){
-        const [num1, num2] = tuple[i];
-        sumNums1 += num1;
-        minHeap.insert(num1);
+    for (let i = 0; i < nums1.length; i++){
+        heap.add(tuple[i][0]);
+        sum += tuple[i][0];
 
-        if (minHeap.heap.length > k){
-            sumNums1 -= minHeap.delete()!;
+        if (heap.getSize() > k){
+            sum -= heap.remove();
         }
 
-        if(minHeap.heap.length === k) {
-            ans = Math.max(ans, sumNums1 * num2)
+        if (heap.getSize() === k){
+            ans = Math.max(ans, sum*tuple[i][1]);
         }
+        
     }
-
     return ans;
 };
