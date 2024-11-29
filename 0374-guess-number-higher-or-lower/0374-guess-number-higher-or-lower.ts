@@ -9,26 +9,24 @@
 
 
 function guessNumber(n: number): number {
-    if (n === 1){
-        return 1;
-    }
+    if (n === 1) return 1;
 
-    let x1 = Math.floor(n/2);
-    let x2 = n;
-    let x0 = 1;
+    let high = n;
+    let low = 1;
+    let mid = Math.floor(n/2);
+    let res = guess(mid);
 
-    while(guess(x1) !== 0){
-        let res = guess(x1);
-        console.log("res: ", res, x0, x1, x2,)
+    while(res !== 0){
         if (res > 0){
-            x0 = x1;
-            x1 = Math.floor((x1+x2)/2) + x0;
-        } else {
-            x2 = x1;
-            x1 = Math.floor((x0+x1)/2);
+            low = mid;
+            mid = Math.floor((low+mid)/2)+ low;
+        } else{
+            high = mid;
+            mid = Math.floor((low+mid)/2)
         }
+
+        res = guess(mid);
     }
 
-
-    return x1;
+    return mid;
 };
