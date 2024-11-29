@@ -9,24 +9,19 @@
 
 
 function guessNumber(n: number): number {
-    if (n === 1) return 1;
+    let left = 0;
+    let right = n;
 
-    let high = n;
-    let low = 1;
-    let mid = Math.floor(n/2);
-    let res = guess(mid);
+    while (left <= right){
+        const mid = Math.floor((left + right)/2);
+        const guessedNum = guess(mid);
 
-    while(res !== 0){
-        if (res > 0){
-            low = mid;
-            mid = Math.floor((low+mid)/2)+ low;
+        if (guessedNum === 0){
+            return mid;
+        }else if (guessedNum === -1){
+            right = mid -1;
         } else{
-            high = mid;
-            mid = Math.floor((low+mid)/2)
+            left = mid + 1;
         }
-
-        res = guess(mid);
     }
-
-    return mid;
 };
