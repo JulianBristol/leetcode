@@ -9,20 +9,23 @@
 
 
 function guessNumber(n: number): number {
-    let left = 0;
-    let right = n;
+    if (n === 1) return 1;
+    let ans = Math.floor(n/2);
+    let max = n;
+    let min = 1;
+    let check = guess(ans);
 
-    while (left <= right){
-        const mid = Math.floor((left + right)/2);
-        const guessedNum = guess(mid);
-
-        if (guessedNum === 0){
-            return mid;
-        }else if (guessedNum === -1){
-            right = mid -1;
-        } else{
-            left = mid + 1;
+    while(check !== 0){
+        if (check > 0){
+            min = ans;
+            ans = Math.floor((ans+max+1)/2)
+        } else if (check < 0){
+            max = ans;
+            ans = Math.floor((ans+min-1)/2)
         }
+
+        check = guess(ans);
     }
-    return -1
+
+    return ans;
 };
