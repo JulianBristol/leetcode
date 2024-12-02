@@ -9,20 +9,17 @@
 
 
 function guessNumber(n: number): number {
-    if (n === 1) return 1;
-    let min = 1, ans = Math.floor(n/2);
-
-    while(true){
-        let q = guess(ans);
-        if (q === 0) break;
-        if (q > 0){
-            min = ans +1;
-            ans = Math.floor((min + n)/2)
-        } else {
-            n = ans -1;
-            ans = Math.floor((min + n)/2)
-        }
+    let left = 0;
+    let right = n;
+    while (left <= right) {
+        const mid = Math.floor((left + right) / 2);
+        const guessedNum = guess(mid);
+        if (guessedNum == 0)
+            return mid;
+        if (guessedNum == -1)
+            right = mid - 1;
+        else
+            left = mid + 1;
     }
-
-    return ans;
+    return -1;
 };
