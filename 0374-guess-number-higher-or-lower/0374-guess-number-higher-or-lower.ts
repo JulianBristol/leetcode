@@ -13,7 +13,6 @@ function guessNumber(n: number): number {
     let min = 1, ans = Math.floor(n/2);
 
     while(true){
-        ans = Math.floor((min + n)/2)
         let q = guess(ans);
         if (q === 0) return ans;
         
@@ -22,6 +21,7 @@ function guessNumber(n: number): number {
         } else {
             n = ans -1;
         }
+        ans = Math.floor((min + n)/2)
     }
 
     return ans;
