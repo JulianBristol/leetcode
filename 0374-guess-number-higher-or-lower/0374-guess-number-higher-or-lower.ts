@@ -10,21 +10,18 @@
 
 function guessNumber(n: number): number {
     if (n === 1) return 1;
-    let ans = Math.floor(n/2);
-    let max = n;
-    let min = 1;
-    let check = guess(ans);
+    let min = 1, max = n, ans = Math.floor(n/2);
 
-    while(check !== 0){
-        if (check > 0){
-            min = ans;
-            ans = Math.floor((ans+max+1)/2)
-        } else if (check < 0){
-            max = ans;
-            ans = Math.floor((ans+min-1)/2)
+    while(true){
+        let q = guess(ans);
+        if (q === 0) break;
+        if (q > 0){
+            min = ans +1;
+            ans = Math.floor((min + max)/2)
+        } else {
+            max = ans -1;
+            ans = Math.floor((min + max)/2)
         }
-
-        check = guess(ans);
     }
 
     return ans;
