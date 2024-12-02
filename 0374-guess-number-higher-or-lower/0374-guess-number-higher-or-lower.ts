@@ -10,17 +10,17 @@
 
 function guessNumber(n: number): number {
     if (n === 1) return 1;
-    let min = 1, max = n, ans = Math.floor(n/2);
+    let min = 1, ans = Math.floor(n/2);
 
     while(true){
         let q = guess(ans);
         if (q === 0) break;
         if (q > 0){
             min = ans +1;
-            ans = Math.floor((min + max)/2)
+            ans = Math.floor((min + n)/2)
         } else {
-            max = ans -1;
-            ans = Math.floor((min + max)/2)
+            n = ans -1;
+            ans = Math.floor((min + n)/2)
         }
     }
 
