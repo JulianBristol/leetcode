@@ -1,7 +1,6 @@
 function findPeakElement(nums: number[]): number {
     let left = 0;
-    let right = nums.length -1;
-    let peak = 0;
+    let right = nums.length;
 
     while(left < right){
         const mid = left + ((right -left) >> 1);
@@ -9,15 +8,12 @@ function findPeakElement(nums: number[]): number {
         if ((nums[mid] > nums[mid-1] || !nums[mid-1]) && (nums[mid] > nums[mid+1] || !nums[mid+1])) return mid;
 
         else if (nums[mid-1] && nums[mid -1] > nums[mid]){
-            peak = mid-1;
-            right = mid -1;
+            right = mid;
             continue;
         } else if (nums[mid+1] && nums[mid +1] > nums[mid]){
-            peak = mid+1;
-            left = mid+1;
+            left = mid;
             continue;
         }
     }
-
-    return peak;
+    return 0;
 };
