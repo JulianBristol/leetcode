@@ -24,21 +24,19 @@ function successfulPairs(spells: number[], potions: number[], success: number): 
                 ans.push(0);
                 break;
             }
+                //mid above failpoint
+            if(mult * potions[mid] >= success){
+                max = mid -1;
+            } else {
+                //mid below failpoint
+                min = mid +1;
+            }
             //yes failpoint (num < success, num+1 >= success)
             if (mult*potions[mid] < success && mult * potions[mid+1] >= success){
                 ans.push(potions.length-1 - mid)
                 break;
             }
-                //mid above failpoint
-            if(mult * potions[mid] >= success){
-                max = mid -1;
-                mid = Math.floor((max+min)/2);
-            } else {
-                //mid below failpoint
-                min = mid +1;
-                mid = Math.floor((max+min)/2);
-            }
-
+            mid = Math.floor((max+min)/2);
          }
     }
 
