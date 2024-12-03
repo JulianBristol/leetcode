@@ -6,8 +6,13 @@ function successfulPairs(spells: number[], potions: number[], success: number): 
     //sort potions
     potions.sort((a,b) => a-b);
     let ans = [];
+    const map = new Map();
 
     for (let i = 0; i < spells.length; i ++){
+        if (map.has(spells[i])){
+            ans.push(map.get(spells[i]));
+            continue;
+        }
         //find the failpoint/passPoint
          let min = 0, max = potions.length-1, mid = Math.floor(potions.length/2);
 
@@ -36,6 +41,7 @@ function successfulPairs(spells: number[], potions: number[], success: number): 
             }
             mid = Math.floor((max+min)/2);
          }
+         map.set(spells[i], ans[ans.length-1]);
     }
 
     return ans;
