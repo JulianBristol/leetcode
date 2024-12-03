@@ -25,7 +25,7 @@ function successfulPairs(spells: number[], potions: number[], success: number): 
                 break;
             }
             //yes failpoint (num < success, num+1 >= success)
-            if (mult*potions[mid] < success && mid+1 < potions.length && mult * potions[mid+1] >= success){
+            if (mult*potions[mid] < success && mult * potions[mid+1] >= success){
                 ans.push(potions.length-1 - mid)
                 break;
             }
