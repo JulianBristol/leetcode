@@ -1,73 +1,73 @@
-function findKthLargest(nums: number[], k: number): number {
-    class MinHeap {
-        size: number;
-        heap: number[];
+class MinHeap {
+    private heap: number[] = []
 
-        constructor(size: number, heap?: number[]) {
-            this.size = size;
-            if (heap){
-                this.heap = heap;
-            } else{
-                this.heap = [];
-            }
-        }
+    constructor () {};
 
-        bubbleUp(): void{
-            let index = this.heap.length -1;
+    add(num: number): void{
+        this.heap.push(num);
+        this.bubbleUp(this.heap.length -1)
+    }
 
-            while(index > 0){
-                let parent = Math.floor((index -1)/2);
-                if (this.heap[index] < this.heap[parent]){
-                    [this.heap[index], this.heap[parent]] = [this.heap[parent], this.heap[index]]
-                    index = parent;
-                } else{
-                    break
-                }
-            }
-        }
+    delete(): void{
+        const smallest = this.heap[0];
+        const last = this.heap.pop();
 
-        bubbleDown(): void{
-            let index = 0;
-            let length = this.heap.length;
-
-            while(index < length){
-                let smallestVal = index;
-                let left = 2 * index + 1;
-                let right = 2 * index + 2;
-
-                if (left < length && this.heap[left] < this.heap[smallestVal]){
-                    smallestVal = left;
-                }
-                if (right < length && this.heap[right] < this.heap[smallestVal]){
-                    smallestVal = right;
-                }
-
-                if (index !== smallestVal){
-                    [this.heap[index], this.heap[smallestVal]] = [this.heap[smallestVal], this.heap[index]];
-                    index = smallestVal;
-                } else{
-                    break;
-                }
-            }
-        }
-
-        add(val: number): void{
-            if (this.heap.length < this.size){
-                this.heap.push(val);
-                this.bubbleUp();
-            } else if (this.heap[0] < val){
-                this.heap[0] = val;
-                this.bubbleDown();
-                this.bubbleUp();
-            }
+        if (this.heap.length > 0){
+            this.heap[0] = last;
+            this.bubbleDown();
         }
     }
 
-    const minHeap = new MinHeap(k);
+    bubbleUp(currentIndex: number = this.heap.length - 1) :void{
+        let parent = Math.floor((currentIndex - 1)/2)
 
-    nums.forEach((x) => {
-        minHeap.add(x);
-    })
+        while(currentIndex > 0 && this.heap[parent] > this.heap[currentIndex]){
+            this.swap(currentIndex, parent);
+            currentIndex = parent;
+            parent = Math.floor((currentIndex -1)/2);
+        }
+    }
 
-    return minHeap.heap[0];
+    bubbleDown(currentIndex: number = 0) :void{
+        let left = 2 * currentIndex + 1;
+        let right = 2 * currentIndex + 2;
+        let smallest = currentIndex;
+
+        if (left < this.heap.length && this.heap[left] < this.heap[smallest]){
+            smallest = left;
+        }
+        if (right < this.heap.length && this.heap[right] < this.heap[smallest]){
+            smallest = right;
+        }
+
+        if (smallest !== currentIndex){
+            this.swap(smallest, currentIndex);
+            this.bubbleDown(smallest);
+        }
+    }
+
+    swap(idx: number, idx1: number): void{
+        [this.heap[idx], this.heap[idx1]] = [this.heap[idx1], this.heap[idx]]
+    }
+
+    getElement() :number{
+        return this.heap[0];
+    }
+
+    getLength() :number{
+        return this.heap.length;
+    }
+}
+
+function findKthLargest(nums: number[], k: number): number {
+    //transform into a minHeap
+    const heap = new MinHeap();
+
+    nums.map((x) => heap.add(x))
+
+    while(heap.getLength() > k){
+        heap.delete();
+    }
+
+    return heap.getElement();
 };
