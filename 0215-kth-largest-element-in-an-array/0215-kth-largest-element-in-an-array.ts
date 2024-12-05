@@ -1,4 +1,4 @@
-class MinHeap {
+class MaxHeap {
     private heap: number[] = []
 
     constructor () {};
@@ -21,7 +21,7 @@ class MinHeap {
     bubbleUp(currentIndex: number = this.heap.length - 1) :void{
         let parent = Math.floor((currentIndex - 1)/2)
 
-        while(currentIndex > 0 && this.heap[parent] > this.heap[currentIndex]){
+        while(currentIndex > 0 && this.heap[parent] < this.heap[currentIndex]){
             this.swap(currentIndex, parent);
             currentIndex = parent;
             parent = Math.floor((currentIndex -1)/2);
@@ -33,10 +33,10 @@ class MinHeap {
         let right = 2 * currentIndex + 2;
         let smallest = currentIndex;
 
-        if (left < this.heap.length && this.heap[left] < this.heap[smallest]){
+        if (left < this.heap.length && this.heap[left] > this.heap[smallest]){
             smallest = left;
         }
-        if (right < this.heap.length && this.heap[right] < this.heap[smallest]){
+        if (right < this.heap.length && this.heap[right] > this.heap[smallest]){
             smallest = right;
         }
 
@@ -61,12 +61,13 @@ class MinHeap {
 
 function findKthLargest(nums: number[], k: number): number {
     //transform into a minHeap
-    const heap = new MinHeap();
+    const heap = new MaxHeap();
 
     nums.map((x) => heap.add(x))
 
-    while(heap.getLength() > k){
+    while(k > 1){
         heap.delete();
+        k--
     }
 
     return heap.getElement();
