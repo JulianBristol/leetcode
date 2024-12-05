@@ -21,10 +21,12 @@ function minEatingSpeed(piles: number[], h: number): number {
             counter -= Math.ceil(piles[i]/mid);
             if (counter < 0) {
                 min = mid+1;
+                break;
             }
             if (counter >= 0 && i === piles.length-1){
-                ans = Math.min(ans, mid)
+                ans = mid
                 max = mid -1;
+                break;
             }
         }
     }
