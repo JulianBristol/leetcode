@@ -1,12 +1,12 @@
-const digitToChar = new Map()
-    digitToChar.set('2', 'abc')
-    digitToChar.set('3', 'def')
-    digitToChar.set('4', 'ghi')
-    digitToChar.set('5', 'jkl')
-    digitToChar.set('6', 'mno')
-    digitToChar.set('7', 'pqrs')
-    digitToChar.set('8', 'tuv')
-    digitToChar.set('9', 'wxyz')
+const letters = new Map()
+    letters.set('2', 'abc')
+    letters.set('3', 'def')
+    letters.set('4', 'ghi')
+    letters.set('5', 'jkl')
+    letters.set('6', 'mno')
+    letters.set('7', 'pqrs')
+    letters.set('8', 'tuv')
+    letters.set('9', 'wxyz')
 
 function letterCombinations(digits: string): string[] {
     if (digits.length === 0) return []
@@ -16,7 +16,7 @@ function letterCombinations(digits: string): string[] {
     let ans = [];
     let digit = digits.charAt(0);
     digits = digits.slice(1);
-    for (let letter of digitToChar.get(digit)){
+    for (let letter of letters.get(digit)){
         let chars = letterCombinations(digits);
         if (chars.length === 0){
             ans.push(letter);
