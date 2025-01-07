@@ -16,7 +16,6 @@ function guessNumber(n: number): number {
     let min = 1
     
     while (guess(cur) !== 0){
-        console.log(cur)
         const res = guess(cur);
         if (res < 0){
             max = cur -1;
