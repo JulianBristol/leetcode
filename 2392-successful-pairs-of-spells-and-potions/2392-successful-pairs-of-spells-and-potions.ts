@@ -1,18 +1,26 @@
 function successfulPairs(spells: number[], potions: number[], success: number): number[] {
-    potions.sort((a,b) => a-b);
+    potions.sort((a,b) => a-b)
 
-    return spells.map( s => {
+    const ans = []
+
+    for (const spell of spells){
         let min = 0;
-        let max = potions.length;
+        let max = potions.length-1;
+        let cur = Math.floor(max/2);
+        let minMatch = potions.length;
 
-        while (min < max){
-            const mid = min + ((max - min) >> 1);
-            if (s * potions[mid] >= success){
-                max = mid;
+        while(min <= max){
+            cur = Math.floor((max + min)/2)
+            let res = spell * potions[cur]
+            if (res >= success){
+                minMatch = cur;
+                max = cur-1
             } else{
-                min = mid + 1;
+                min = cur+1
             }
         }
-        return potions.length - min;
-    })
+        ans.push(potions.length - minMatch)
+    }
+
+    return ans
 };
