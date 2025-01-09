@@ -2,14 +2,14 @@ function findPeakElement(nums: number[]): number {
     let left = 0;
     let right = nums.length-1;
 
-    while(left < right){
-        const mid = left + ((right -left) >> 1);
-        
-        if (nums[mid] > nums[mid+1]){
-            right = mid;
+    while (left < right){
+        let cur = Math.floor((left+right)/2);
+        if (nums[cur] < nums[cur+1]){
+            left = cur+1;
         } else{
-            left = mid+1;
+            right = cur
         }
     }
+
     return left;
 };
