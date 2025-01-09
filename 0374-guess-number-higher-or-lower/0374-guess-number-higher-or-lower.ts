@@ -9,23 +9,19 @@
 
 
 function guessNumber(n: number): number {
-    if (n === 1) return 1;
-
-    let max = n;
-    let cur = n/2
-    let min = 1
+    let min = 1;
     
-    while (guess(cur) !== 0){
-        const res = guess(cur);
-        if (res < 0){
-            max = cur -1;
-            cur = (max + min)/2 
-        } else if (res > 0){
-            min = cur + 1;
-            cur = (max+min)/2
-        } else if (res===0){
-            break;
+    while (min <= n){
+        const mid = Math.floor((min+n)/2);
+
+        const res = guess(mid);
+
+        if (res === 1){
+            min = mid+1;
+        }else if (res === -1){
+            n = mid-1;
+        } else{
+            return mid;
         }
     }
-    return cur;
 };
