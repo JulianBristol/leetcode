@@ -9,19 +9,18 @@
 
 
 function guessNumber(n: number): number {
-    let min = 1;
-    
-    while (min <= n){
-        const mid = Math.floor((min+n)/2);
+    let min = 0;
+    let max = n;
 
-        const res = guess(mid);
-
-        if (res === 1){
-            min = mid+1;
-        }else if (res === -1){
-            n = mid-1;
-        } else{
-            return mid;
+    while (min <= max){
+        const cur = Math.floor((min + max)/2);
+        
+        if (guess(cur) === 1){
+            min = cur + 1
+        } else {
+            max = cur - 1
         }
     }
+
+    return min;
 };
