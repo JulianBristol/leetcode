@@ -1,28 +1,21 @@
+const letters = ["abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"];
+
 function letterCombinations(digits: string): string[] {
     if (digits.length === 0) return []
     const ans = [];
-    const letters = ["abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"];
 
-    const firstLetter = digits.substring(0,1);
+    const letArray = letters[Number(digits.substring(0,1)) - 2].split("")
     const allLetters = digits.slice(1);
-    
-    const letArray = letters[Number(firstLetter) - 2].split("")
 
     letArray.forEach((letter) => {
-        console.log(allLetters)
-        const smallerLetters = letterCombinations(allLetters)
-        if (smallerLetters.length > 0){
-            smallerLetters.forEach((smallLetter = "") => {
-            console.log("smallerletter: ", smallLetter)
-            let addedLetter = letter + smallLetter;
-            ans.push(addedLetter)
+        const otherLetters = letterCombinations(allLetters)
+        if (otherLetters.length > 0){
+            otherLetters.forEach((char) => {
+            ans.push(letter + char)
         })
         } else {
             ans.push(letter)
         }
-        
-            
-        
     })
 
     return ans
