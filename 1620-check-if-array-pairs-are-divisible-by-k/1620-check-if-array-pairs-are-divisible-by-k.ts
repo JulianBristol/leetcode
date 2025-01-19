@@ -1,21 +1,17 @@
 function canArrange(arr: number[], k: number): boolean {
-    const map = new Map<number, number>();
+    const remainderCounts = new Array(k).fill(0);
 
-    for(let r of arr){
-        const remainder = ((r%k)+k)%k;
-        
-        //check if there is a complement remainder
-        const complement = (k-remainder) %k;
-        if (map.has(complement) && map.get(complement)! >0){
-            //pair found, decrement complement
-            map.set(complement, map.get(complement)-1);
-            //if complement === 0 delete it
-            if (map.get(complement) === 0) map.delete(complement);
-        } else{
-            //add remainder if complement not found
-            map.set(remainder, (map.get(remainder) || 0) + 1);
-        }
+    for (const num of arr) {
+        const remainder = ((num % k) + k) % k; // Handle negative numbers
+        remainderCounts[remainder]++;
     }
 
-    return map.size === 0;
-};
+    // Check pairs for all remainders
+    if (remainderCounts[0] % 2 !== 0) return false; // Remainder 0 must form pairs
+
+    for (let i = 1; i <= Math.floor(k / 2); i++) {
+        if (remainderCounts[i] !== remainderCounts[k - i]) return false;
+    }
+
+    return true;
+}
