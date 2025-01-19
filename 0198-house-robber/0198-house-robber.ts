@@ -1,20 +1,16 @@
 function rob(nums: number[]): number {
     if (nums.length === 1){
-        return nums[0]
-    }
-    if (nums.length === 2){
-        return Math.max(nums[0], nums[1])
-    }
-    if (nums.length === 3){
-        return Math.max(nums[0] + nums[2], nums[1])
-    }
-    const arr = [nums[0], nums[1], nums[2]+nums[0]];
-
-    for (let i = 3; i < nums.length; i++){
-        arr.push(Math.max(nums[i] + arr[i-3], nums[i]+ arr[i-2]))
+        return nums[0];
     }
 
-    arr.push(Math.max(arr[arr.length-1], arr[arr.length-2]))
+    let prev1 = 0;
+    let prev2 = 0;
 
-    return arr[arr.length-1]
+    for (let num of nums){
+        let temp = prev1;
+        prev1 = Math.max(prev1, prev2+num);
+        prev2 = temp
+    }
+
+    return prev1
 };
