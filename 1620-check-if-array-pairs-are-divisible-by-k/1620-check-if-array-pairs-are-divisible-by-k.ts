@@ -19,14 +19,14 @@ function canArrange(arr: number[], k: number): boolean {
     if (map.get(0) && map.get(0)%2 !== 0){
         return false;
     } else{
-        map.set(0, 0)
+        map.delete(0)
     }
 
-    let ans = true;
-    Array.from(map.values()).forEach((val) => {
-        if (val !== 0){
-            ans = false;
+    map.forEach((value, key) => {
+        if (value === 0){
+            map.delete(key);
         }
     })
-    return ans;
+
+    return map.size === 0;
 };
