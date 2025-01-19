@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/JulianBristol/leetcode/tree/master/0216-combination-sum-iii) |
 | [0729-my-calendar-i](https://github.com/JulianBristol/leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/JulianBristol/leetcode/tree/master/0731-my-calendar-ii) |
+| [0747-min-cost-climbing-stairs](https://github.com/JulianBristol/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0859-design-circular-deque](https://github.com/JulianBristol/leetcode/tree/master/0859-design-circular-deque) |
 | [0907-koko-eating-bananas](https://github.com/JulianBristol/leetcode/tree/master/0907-koko-eating-bananas) |
 | [1256-rank-transform-of-an-array](https://github.com/JulianBristol/leetcode/tree/master/1256-rank-transform-of-an-array) |
@@ -175,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0747-min-cost-climbing-stairs](https://github.com/JulianBristol/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [1236-n-th-tribonacci-number](https://github.com/JulianBristol/leetcode/tree/master/1236-n-th-tribonacci-number) |
 ## Memoization
 |  |
