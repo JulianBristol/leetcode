@@ -87,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/JulianBristol/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [1250-longest-common-subsequence](https://github.com/JulianBristol/leetcode/tree/master/1250-longest-common-subsequence) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/JulianBristol/leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/JulianBristol/leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -189,6 +190,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0747-min-cost-climbing-stairs](https://github.com/JulianBristol/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0806-domino-and-tromino-tiling](https://github.com/JulianBristol/leetcode/tree/master/0806-domino-and-tromino-tiling) |
 | [1236-n-th-tribonacci-number](https://github.com/JulianBristol/leetcode/tree/master/1236-n-th-tribonacci-number) |
+| [1250-longest-common-subsequence](https://github.com/JulianBristol/leetcode/tree/master/1250-longest-common-subsequence) |
 ## Memoization
 |  |
 | ------- |
