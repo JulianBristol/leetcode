@@ -1,14 +1,19 @@
 function countBits(n: number): number[] {
-    const ans = [];
+    const ans:number[] = Array(n+1).fill(0);
 
-    for(let i = 0; i <= n; i++){
+    for(let i = 1; i <= n; i++){
         let count = 0;
         let n = i
         while(n > 0){
-            n &= (n-1);
-            count++;
+            if (ans[n] !== 0){
+                count += ans[n];
+                break;
+            } else {
+                n &= (n-1);
+                count++;
+            }
         }
-        ans.push(count)
+        ans[i] = count;
     }
 
     return ans;
