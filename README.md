@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/JulianBristol/leetcode/tree/master/0055-jump-game) |
+| [0136-single-number](https://github.com/JulianBristol/leetcode/tree/master/0136-single-number) |
 | [0162-find-peak-element](https://github.com/JulianBristol/leetcode/tree/master/0162-find-peak-element) |
 | [0198-house-robber](https://github.com/JulianBristol/leetcode/tree/master/0198-house-robber) |
 | [0215-kth-largest-element-in-an-array](https://github.com/JulianBristol/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
@@ -81,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/JulianBristol/leetcode/tree/master/0136-single-number) |
 | [0338-counting-bits](https://github.com/JulianBristol/leetcode/tree/master/0338-counting-bits) |
 | [1435-xor-queries-of-a-subarray](https://github.com/JulianBristol/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
