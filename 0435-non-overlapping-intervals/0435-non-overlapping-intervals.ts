@@ -1,12 +1,12 @@
 function eraseOverlapIntervals(intervals: number[][]): number {
     intervals.sort((a,b) => a[1]-b[1])
 
-    let currentTuple = [Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY];
+    let cur = Number.NEGATIVE_INFINITY;
     let ans = 0;
-    
+
     for(const tuple of intervals){
-        if (currentTuple[1] <= tuple[0]){
-            currentTuple = tuple;
+        if (cur <= tuple[0]){
+            cur = tuple[1];
         } else{
             ans++;
         }
