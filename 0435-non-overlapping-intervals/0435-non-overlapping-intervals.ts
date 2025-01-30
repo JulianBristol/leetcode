@@ -1,5 +1,4 @@
 function eraseOverlapIntervals(intervals: number[][]): number {
-    if (intervals.length === 1) return 0;
     intervals.sort((a,b) => a[1]-b[1])
 
     let cur = intervals[0][1];
