@@ -10,8 +10,6 @@ function findMinArrowShots(points: number[][]): number {
             ans++;
             start = points[i][0]
             end = points[i][1];
-        } else if (end > points[i][1]){
-            end = points[i][1];
         }
     }
 
