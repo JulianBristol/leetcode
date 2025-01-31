@@ -141,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/JulianBristol/leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/JulianBristol/leetcode/tree/master/0731-my-calendar-ii) |
 | [0859-design-circular-deque](https://github.com/JulianBristol/leetcode/tree/master/0859-design-circular-deque) |
+| [0937-online-stock-span](https://github.com/JulianBristol/leetcode/tree/master/0937-online-stock-span) |
 | [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Segment Tree
 |  |
@@ -231,8 +232,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0739-daily-temperatures](https://github.com/JulianBristol/leetcode/tree/master/0739-daily-temperatures) |
+| [0937-online-stock-span](https://github.com/JulianBristol/leetcode/tree/master/0937-online-stock-span) |
 ## Monotonic Stack
 |  |
 | ------- |
 | [0739-daily-temperatures](https://github.com/JulianBristol/leetcode/tree/master/0739-daily-temperatures) |
+| [0937-online-stock-span](https://github.com/JulianBristol/leetcode/tree/master/0937-online-stock-span) |
+## Data Stream
+|  |
+| ------- |
+| [0937-online-stock-span](https://github.com/JulianBristol/leetcode/tree/master/0937-online-stock-span) |
 <!---LeetCode Topics End-->
