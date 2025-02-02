@@ -1,21 +1,16 @@
 function mergeAlternately(word1: string, word2: string): string {
-    if (word1.length===0) return word2;
-    if (word2.length===0) return word1;
+    const ans = new Array(word1.length + word2.length);
+    let a = 0;
+    let b = 0;
 
-    const result = [];
+    for(let i = 0; i < ans.length;){
+        if (a < word1.length){
+            ans[i++] = word1[a++]
+        }
+        if (b < word2.length){
+            ans[i++] = word2[b++]
+        }
+    }
 
-    const w1 = word1.split('');
-    const w2 = word2.split('');
-
-    while (w1.length && w2.length) {
-        result.push(
-            w1.shift(),
-            w2.shift()
-        )
-    };
-
-    result.push(...w1, ...w2);
-
-    return result.join('')
-
+    return ans.join("");
 };
