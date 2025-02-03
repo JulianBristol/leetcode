@@ -1,21 +1,15 @@
 function longestPalindrome(s: string): number {
+    let odds = 0, ans = 0;
     const map = new Map<string, number>()
     for(let char of s){
-        map.set(char, (map.get(char)+1 || 1))
-    }
-
-    let ans = 0;
-    let isOdd = false;
-    for(let num of Array.from(map.values())){
-        if (num&1){
-            if(!isOdd){
-                isOdd = true;
-            }
-            ans += num-1;
+        map.set(char, (map.get(char)+1 || 1));
+        if (map.get(char) & 1){
+            odds++;
         } else{
-            ans+=num;
+            odds--;
+            ans += 2;
         }
     }
 
-    return isOdd ? ans +1 : ans;
+    return odds>0 ? ans +1 : ans;
 };
