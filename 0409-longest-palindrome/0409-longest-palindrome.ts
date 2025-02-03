@@ -1,15 +1,19 @@
 function longestPalindrome(s: string): number {
-    let odds = 0, ans = 0;
-    const map = new Map<string, number>()
-    for(let char of s){
-        map.set(char, (map.get(char)+1 || 1));
-        if (map.get(char) & 1){
-            odds++;
-        } else{
-            odds--;
-            ans += 2;
+    const chars = s.split('');
+    const set = new Set();
+    let count = 0;
+    for (let i = 0; i < chars.length; i++) {
+        const c = chars[i];
+        if (set.has(c)) {
+            count += 2;
+            set.delete(c);
+        } else {
+            set.add(c);
         }
     }
+    if (set.size > 0) {
+        count += 1;
+    }
 
-    return odds ? ans +1 : ans;
+    return count;
 };
