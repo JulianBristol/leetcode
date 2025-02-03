@@ -11,5 +11,5 @@ function longestPalindrome(s: string): number {
         }
     }
 
-    return odds>0 ? ans +1 : ans;
+    return odds ? ans +1 : ans;
 };
