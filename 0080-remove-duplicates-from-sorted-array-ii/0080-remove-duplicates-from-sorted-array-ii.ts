@@ -1,21 +1,16 @@
 function removeDuplicates(nums: number[]): number {
-    /* using a two pointer??
-    if nums.length < 3 return 0;
-    p1 = 2 p2 = 2 
-    if [p1-2] !== p2, [p1++ = p2++]
-    else p2++.
-
-    return nums.length - p2
-     */
-
-     if (nums.length < 3) return nums.length;
-     let p1=2; 
-
-     for(let i = 2; i < nums.length; i++){
-        if (nums[p1-2] !== nums[i]){
-            nums[p1++] = nums[i];
+    if (nums.length <= 2) return nums.length;
+    
+    // Initialize the pointer for the final result.
+    let j = 2;
+    
+    // Start from the third element, and if it's not a duplicate beyond the allowed two, keep it.
+    for (let i = 2; i < nums.length; i++) {
+        if (nums[i] !== nums[j - 2]) {
+            nums[j] = nums[i];
+            j++;
         }
-     }
-
-     return p1
-};
+    }
+    
+    return j;
+}
