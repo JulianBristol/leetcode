@@ -4,14 +4,14 @@ function removeDuplicates(nums: number[]): number {
      for(let i = 1; i < nums.length; i++){
         if (prev !== nums[i]){
             nums[p1++] = nums[i];
-            prev = nums[i];
             twice = false;
         } else if (!twice){
+            nums[p1++] = nums[i];
             twice = true;
-            nums[p1++] = nums[i]
         } else {
             dups++;
         }
+        prev = nums[i];
      }
 
      return nums.length-dups
