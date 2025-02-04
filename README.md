@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/JulianBristol/leetcode/tree/master/0027-remove-element) |
 | [0055-jump-game](https://github.com/JulianBristol/leetcode/tree/master/0055-jump-game) |
 | [0088-merge-sorted-array](https://github.com/JulianBristol/leetcode/tree/master/0088-merge-sorted-array) |
 | [0136-single-number](https://github.com/JulianBristol/leetcode/tree/master/0136-single-number) |
@@ -209,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/JulianBristol/leetcode/tree/master/0027-remove-element) |
 | [0088-merge-sorted-array](https://github.com/JulianBristol/leetcode/tree/master/0088-merge-sorted-array) |
 | [1894-merge-strings-alternately](https://github.com/JulianBristol/leetcode/tree/master/1894-merge-strings-alternately) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/JulianBristol/leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
