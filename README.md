@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/JulianBristol/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1694-make-sum-divisible-by-p](https://github.com/JulianBristol/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
+| [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/JulianBristol/leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/JulianBristol/leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/JulianBristol/leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -115,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1397-search-suggestions-system](https://github.com/JulianBristol/leetcode/tree/master/1397-search-suggestions-system) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1894-merge-strings-alternately](https://github.com/JulianBristol/leetcode/tree/master/1894-merge-strings-alternately) |
+| [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/JulianBristol/leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/JulianBristol/leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/JulianBristol/leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Counting
@@ -123,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/JulianBristol/leetcode/tree/master/0169-majority-element) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/JulianBristol/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
+| [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/JulianBristol/leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/JulianBristol/leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 ## Prefix Sum
 |  |
