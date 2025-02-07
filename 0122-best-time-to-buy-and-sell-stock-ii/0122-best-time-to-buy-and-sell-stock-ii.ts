@@ -1,14 +1,13 @@
 function maxProfit(prices: number[]): number {
-    let profit = 0;
-    let cost = -prices[0];
+    let cost = -prices[0], profit = 0;
 
-    for(let i = 1; i < prices.length; i++){
-        if (cost + prices[i] > 0){
-            profit += prices[i] + cost;
+    for(let i =1; i < prices.length; i++){
+        if (prices[i-1] < prices[i]){
+            profit += cost + prices[i];
             cost = -prices[i];
-            continue;
+        } else {
+            cost = -prices[i];
         }
-        cost = Math.max(cost, -prices[i]);
     }
 
     return profit;
