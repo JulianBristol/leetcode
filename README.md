@@ -75,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/JulianBristol/leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
+| [2434-design-a-number-container-system](https://github.com/JulianBristol/leetcode/tree/master/2434-design-a-number-container-system) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/JulianBristol/leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/JulianBristol/leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/JulianBristol/leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -170,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0859-design-circular-deque](https://github.com/JulianBristol/leetcode/tree/master/0859-design-circular-deque) |
 | [0937-online-stock-span](https://github.com/JulianBristol/leetcode/tree/master/0937-online-stock-span) |
 | [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
+| [2434-design-a-number-container-system](https://github.com/JulianBristol/leetcode/tree/master/2434-design-a-number-container-system) |
 ## Segment Tree
 |  |
 | ------- |
@@ -181,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/JulianBristol/leetcode/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/JulianBristol/leetcode/tree/master/0731-my-calendar-ii) |
 | [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
+| [2434-design-a-number-container-system](https://github.com/JulianBristol/leetcode/tree/master/2434-design-a-number-container-system) |
 ## Queue
 |  |
 | ------- |
@@ -208,6 +211,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/JulianBristol/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [1397-search-suggestions-system](https://github.com/JulianBristol/leetcode/tree/master/1397-search-suggestions-system) |
 | [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
+| [2434-design-a-number-container-system](https://github.com/JulianBristol/leetcode/tree/master/2434-design-a-number-container-system) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/JulianBristol/leetcode/tree/master/2553-total-cost-to-hire-k-workers) |
 | [2636-maximum-subsequence-score](https://github.com/JulianBristol/leetcode/tree/master/2636-maximum-subsequence-score) |
 ## Quickselect
