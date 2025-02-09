@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1927-maximum-ascending-subarray-sum](https://github.com/JulianBristol/leetcode/tree/master/1927-maximum-ascending-subarray-sum) |
 | [2155-find-missing-observations](https://github.com/JulianBristol/leetcode/tree/master/2155-find-missing-observations) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/JulianBristol/leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
+| [2448-count-number-of-bad-pairs](https://github.com/JulianBristol/leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/JulianBristol/leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/JulianBristol/leetcode/tree/master/2553-total-cost-to-hire-k-workers) |
 | [2636-maximum-subsequence-score](https://github.com/JulianBristol/leetcode/tree/master/2636-maximum-subsequence-score) |
@@ -54,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1236-n-th-tribonacci-number](https://github.com/JulianBristol/leetcode/tree/master/1236-n-th-tribonacci-number) |
 | [1406-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/JulianBristol/leetcode/tree/master/1406-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [2155-find-missing-observations](https://github.com/JulianBristol/leetcode/tree/master/2155-find-missing-observations) |
+| [2448-count-number-of-bad-pairs](https://github.com/JulianBristol/leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/JulianBristol/leetcode/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 ## Simulation
 |  |
@@ -76,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/JulianBristol/leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 | [2434-design-a-number-container-system](https://github.com/JulianBristol/leetcode/tree/master/2434-design-a-number-container-system) |
+| [2448-count-number-of-bad-pairs](https://github.com/JulianBristol/leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/JulianBristol/leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/JulianBristol/leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/JulianBristol/leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -137,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/JulianBristol/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/JulianBristol/leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
+| [2448-count-number-of-bad-pairs](https://github.com/JulianBristol/leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/JulianBristol/leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 ## Prefix Sum
 |  |
