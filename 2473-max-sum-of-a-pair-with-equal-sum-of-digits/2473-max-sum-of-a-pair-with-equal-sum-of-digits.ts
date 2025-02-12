@@ -2,6 +2,7 @@ function maximumSum(nums: number[]): number {
     const map = new Map<number, number>();
     let ans = -1;
 
+    //Much more efficient way to sum up digits
     function digitSum(n: number): number {
         let sum = 0;
         while (n > 0) {
