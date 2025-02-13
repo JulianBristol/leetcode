@@ -1,7 +1,7 @@
 <h2><a href="https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array">3066. Minimum Operations to Exceed Threshold Value II</a></h2><h3>Medium</h3><hr><p>
   You are given a 0-indexed integer array <code>nums</code>, and an integer <code>k</code>.
 
-In one operation, you will:
+In one operation, you will: 
 
 Take the two smallest integers <code>x</code> and <code>y</code> in nums.
 Remove <code>x</code> and <code>y</code> from <code>nums</code>.
