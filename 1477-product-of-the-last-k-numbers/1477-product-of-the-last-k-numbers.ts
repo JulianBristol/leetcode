@@ -10,7 +10,7 @@ class ProductOfNumbers {
 
     getProduct(k: number): number {
         let product = 1;
-        for( let i = this.nums.length-1; i >= 0 && k > 0; i--){
+        for( let i = this.nums.length-1; k > 0; i--){
             product *= this.nums[i];
             k--;
         }
