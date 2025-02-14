@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1364-tuple-with-same-product](https://github.com/JulianBristol/leetcode/tree/master/1364-tuple-with-same-product) |
 | [1397-search-suggestions-system](https://github.com/JulianBristol/leetcode/tree/master/1397-search-suggestions-system) |
 | [1435-xor-queries-of-a-subarray](https://github.com/JulianBristol/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+| [1477-product-of-the-last-k-numbers](https://github.com/JulianBristol/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/JulianBristol/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1694-make-sum-divisible-by-p](https://github.com/JulianBristol/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -58,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1013-fibonacci-number](https://github.com/JulianBristol/leetcode/tree/master/1013-fibonacci-number) |
 | [1236-n-th-tribonacci-number](https://github.com/JulianBristol/leetcode/tree/master/1236-n-th-tribonacci-number) |
 | [1406-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/JulianBristol/leetcode/tree/master/1406-subtract-the-product-and-sum-of-digits-of-an-integer) |
+| [1477-product-of-the-last-k-numbers](https://github.com/JulianBristol/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [2155-find-missing-observations](https://github.com/JulianBristol/leetcode/tree/master/2155-find-missing-observations) |
 | [2448-count-number-of-bad-pairs](https://github.com/JulianBristol/leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/JulianBristol/leetcode/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
@@ -157,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0731-my-calendar-ii](https://github.com/JulianBristol/leetcode/tree/master/0731-my-calendar-ii) |
 | [1435-xor-queries-of-a-subarray](https://github.com/JulianBristol/leetcode/tree/master/1435-xor-queries-of-a-subarray) |
+| [1477-product-of-the-last-k-numbers](https://github.com/JulianBristol/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1694-make-sum-divisible-by-p](https://github.com/JulianBristol/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 ## Trie
 |  |
@@ -184,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0731-my-calendar-ii](https://github.com/JulianBristol/leetcode/tree/master/0731-my-calendar-ii) |
 | [0859-design-circular-deque](https://github.com/JulianBristol/leetcode/tree/master/0859-design-circular-deque) |
 | [0937-online-stock-span](https://github.com/JulianBristol/leetcode/tree/master/0937-online-stock-span) |
+| [1477-product-of-the-last-k-numbers](https://github.com/JulianBristol/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [2413-smallest-number-in-infinite-set](https://github.com/JulianBristol/leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 | [2434-design-a-number-container-system](https://github.com/JulianBristol/leetcode/tree/master/2434-design-a-number-container-system) |
 ## Segment Tree
@@ -309,6 +313,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0937-online-stock-span](https://github.com/JulianBristol/leetcode/tree/master/0937-online-stock-span) |
+| [1477-product-of-the-last-k-numbers](https://github.com/JulianBristol/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 ## Recursion
 |  |
 | ------- |
