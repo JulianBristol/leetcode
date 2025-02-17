@@ -81,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/JulianBristol/leetcode/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/JulianBristol/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0409-longest-palindrome](https://github.com/JulianBristol/leetcode/tree/master/0409-longest-palindrome) |
+| [1160-letter-tile-possibilities](https://github.com/JulianBristol/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1256-rank-transform-of-an-array](https://github.com/JulianBristol/leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1364-tuple-with-same-product](https://github.com/JulianBristol/leetcode/tree/master/1364-tuple-with-same-product) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/JulianBristol/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
@@ -137,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0072-edit-distance](https://github.com/JulianBristol/leetcode/tree/master/0072-edit-distance) |
 | [0208-implement-trie-prefix-tree](https://github.com/JulianBristol/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0409-longest-palindrome](https://github.com/JulianBristol/leetcode/tree/master/0409-longest-palindrome) |
+| [1160-letter-tile-possibilities](https://github.com/JulianBristol/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1250-longest-common-subsequence](https://github.com/JulianBristol/leetcode/tree/master/1250-longest-common-subsequence) |
 | [1397-search-suggestions-system](https://github.com/JulianBristol/leetcode/tree/master/1397-search-suggestions-system) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -150,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/JulianBristol/leetcode/tree/master/0169-majority-element) |
+| [1160-letter-tile-possibilities](https://github.com/JulianBristol/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1364-tuple-with-same-product](https://github.com/JulianBristol/leetcode/tree/master/1364-tuple-with-same-product) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/JulianBristol/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/JulianBristol/leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -272,6 +275,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/JulianBristol/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0216-combination-sum-iii](https://github.com/JulianBristol/leetcode/tree/master/0216-combination-sum-iii) |
+| [1160-letter-tile-possibilities](https://github.com/JulianBristol/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/JulianBristol/leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/JulianBristol/leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## Dynamic Programming
