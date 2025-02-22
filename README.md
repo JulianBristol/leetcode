@@ -108,11 +108,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Tree
 |  |
 | ------- |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/JulianBristol/leetcode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/JulianBristol/leetcode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Breadth-First Search
@@ -123,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Tree
 |  |
 | ------- |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/JulianBristol/leetcode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Number Theory
@@ -145,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0072-edit-distance](https://github.com/JulianBristol/leetcode/tree/master/0072-edit-distance) |
 | [0208-implement-trie-prefix-tree](https://github.com/JulianBristol/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0409-longest-palindrome](https://github.com/JulianBristol/leetcode/tree/master/0409-longest-palindrome) |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/JulianBristol/leetcode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1160-letter-tile-possibilities](https://github.com/JulianBristol/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1250-longest-common-subsequence](https://github.com/JulianBristol/leetcode/tree/master/1250-longest-common-subsequence) |
 | [1397-search-suggestions-system](https://github.com/JulianBristol/leetcode/tree/master/1397-search-suggestions-system) |
