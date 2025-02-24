@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/JulianBristol/leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/JulianBristol/leetcode/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/JulianBristol/leetcode/tree/master/2553-total-cost-to-hire-k-workers) |
+| [2564-most-profitable-path-in-a-tree](https://github.com/JulianBristol/leetcode/tree/master/2564-most-profitable-path-in-a-tree) |
 | [2636-maximum-subsequence-score](https://github.com/JulianBristol/leetcode/tree/master/2636-maximum-subsequence-score) |
 | [3066-minimum-operations-to-exceed-threshold-value-ii](https://github.com/JulianBristol/leetcode/tree/main/3066-minimum-operations-to-exceed-threshold-value-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/JulianBristol/leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -114,17 +115,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/JulianBristol/leetcode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1484-linked-list-in-binary-tree) |
+| [2564-most-profitable-path-in-a-tree](https://github.com/JulianBristol/leetcode/tree/master/2564-most-profitable-path-in-a-tree) |
 ## Depth-First Search
 |  |
 | ------- |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/JulianBristol/leetcode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1484-linked-list-in-binary-tree) |
+| [2564-most-profitable-path-in-a-tree](https://github.com/JulianBristol/leetcode/tree/master/2564-most-profitable-path-in-a-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1484-linked-list-in-binary-tree) |
+| [2564-most-profitable-path-in-a-tree](https://github.com/JulianBristol/leetcode/tree/master/2564-most-profitable-path-in-a-tree) |
 ## Binary Tree
 |  |
 | ------- |
@@ -351,4 +355,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1013-fibonacci-number](https://github.com/JulianBristol/leetcode/tree/master/1013-fibonacci-number) |
+## Graph
+|  |
+| ------- |
+| [2564-most-profitable-path-in-a-tree](https://github.com/JulianBristol/leetcode/tree/master/2564-most-profitable-path-in-a-tree) |
 <!---LeetCode Topics End-->
