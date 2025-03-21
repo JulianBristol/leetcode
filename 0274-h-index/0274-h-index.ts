@@ -5,10 +5,8 @@ function hIndex(citations: number[]): number {
 
     for (let i = 0; i < citations.length; i++){
         let numCitations = citations.length - i;
-        if (citations[i] <= numCitations){
-            ans = Math.max(ans, citations[i])
-        } else {
-            ans = Math.max(ans, numCitations)
+        if (citations[i] >= numCitations){
+            return numCitations
         }
     }
 
