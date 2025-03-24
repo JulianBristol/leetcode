@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/JulianBristol/leetcode/tree/master/0001-two-sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/JulianBristol/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/JulianBristol/leetcode/tree/master/0027-remove-element) |
 | [0045-jump-game-ii](https://github.com/JulianBristol/leetcode/tree/master/0045-jump-game-ii) |
@@ -85,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/JulianBristol/leetcode/tree/master/0001-two-sum) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/JulianBristol/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0169-majority-element](https://github.com/JulianBristol/leetcode/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/JulianBristol/leetcode/tree/master/0208-implement-trie-prefix-tree) |
