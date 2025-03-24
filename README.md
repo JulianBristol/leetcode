@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/JulianBristol/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/JulianBristol/leetcode/tree/master/0027-remove-element) |
 | [0045-jump-game-ii](https://github.com/JulianBristol/leetcode/tree/master/0045-jump-game-ii) |
+| [0049-group-anagrams](https://github.com/JulianBristol/leetcode/tree/master/0049-group-anagrams) |
 | [0055-jump-game](https://github.com/JulianBristol/leetcode/tree/master/0055-jump-game) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/JulianBristol/leetcode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/JulianBristol/leetcode/tree/master/0088-merge-sorted-array) |
@@ -88,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/JulianBristol/leetcode/tree/master/0001-two-sum) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/JulianBristol/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0049-group-anagrams](https://github.com/JulianBristol/leetcode/tree/master/0049-group-anagrams) |
 | [0169-majority-element](https://github.com/JulianBristol/leetcode/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/JulianBristol/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0409-longest-palindrome](https://github.com/JulianBristol/leetcode/tree/master/0409-longest-palindrome) |
@@ -161,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/JulianBristol/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0049-group-anagrams](https://github.com/JulianBristol/leetcode/tree/master/0049-group-anagrams) |
 | [0072-edit-distance](https://github.com/JulianBristol/leetcode/tree/master/0072-edit-distance) |
 | [0208-implement-trie-prefix-tree](https://github.com/JulianBristol/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0409-longest-palindrome](https://github.com/JulianBristol/leetcode/tree/master/0409-longest-palindrome) |
@@ -247,6 +250,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/JulianBristol/leetcode/tree/master/0049-group-anagrams) |
 | [0088-merge-sorted-array](https://github.com/JulianBristol/leetcode/tree/master/0088-merge-sorted-array) |
 | [0169-majority-element](https://github.com/JulianBristol/leetcode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/JulianBristol/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
