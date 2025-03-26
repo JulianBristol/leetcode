@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/JulianBristol/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0216-combination-sum-iii](https://github.com/JulianBristol/leetcode/tree/master/0216-combination-sum-iii) |
 | [0274-h-index](https://github.com/JulianBristol/leetcode/tree/master/0274-h-index) |
+| [0322-coin-change](https://github.com/JulianBristol/leetcode/tree/master/0322-coin-change) |
 | [0435-non-overlapping-intervals](https://github.com/JulianBristol/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/JulianBristol/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/JulianBristol/leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
@@ -139,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0322-coin-change](https://github.com/JulianBristol/leetcode/tree/master/0322-coin-change) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/JulianBristol/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/JulianBristol/leetcode/tree/master/2564-most-profitable-path-in-a-tree) |
@@ -338,6 +340,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/JulianBristol/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/JulianBristol/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0198-house-robber](https://github.com/JulianBristol/leetcode/tree/master/0198-house-robber) |
+| [0322-coin-change](https://github.com/JulianBristol/leetcode/tree/master/0322-coin-change) |
 | [0338-counting-bits](https://github.com/JulianBristol/leetcode/tree/master/0338-counting-bits) |
 | [0435-non-overlapping-intervals](https://github.com/JulianBristol/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/JulianBristol/leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
