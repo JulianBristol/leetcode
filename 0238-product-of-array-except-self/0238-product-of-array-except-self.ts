@@ -4,11 +4,13 @@ function productExceptSelf(nums: number[]): number[] {
 
     for (let i = 1; i < nums.length; i++){
         prefix.push(nums[i-1] * prefix[i-1])
-        suffix.unshift(nums[nums.length-i] * suffix[suffix.length-i])
+        suffix.push(nums[nums.length-i] * suffix[i-1])
     }
+
     const ans = [];
     for(let i = 0; i < suffix.length; i++){
-        ans.push(prefix[i] * suffix[i])
+        ans.push(prefix[i] * suffix[suffix.length - i-1])
     }
+    
     return ans
 };
